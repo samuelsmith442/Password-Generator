@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    background: #1F2937;
+    color: #fff;
+}
+
+.container {
+    margin: 12%;
+    width: 90%;
+    max-width: 700px;
+}
+
+
+.container h1 {
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 0;
+}
+
+.container h1 span {
+    color: #4ADF86;
+}
+
+.container p {
+    font-size: 21px;
+    margin-top: 10px;
+    
+}
+
+button {
+margin-top: 50px;     
+padding: 9px 17px 9px 15px;
+justify-content: center;
+align-items: center;
+color: #fff;
+border-radius: 6px;
+background: #10B981;
+border: none;
+cursor: pointer;
+
+}
+
+hr {
+   
+  margin-top: 50px;
+    border: none; /* Remove the default border */
+    height: 1px; /* Set the height to create a horizontal line */
+    background: #2F3E53;
+    width: 100%; /* Adjust the width to your preference */
+    margin-left: auto; /* Center the HR on the larger screens */
+    margin-right: auto; /* Center the HR on the larger screens */  
+
+
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+input[type="text"] {
+    margin-top:  35px;
+    width: 40%; /* Adjust the width as needed */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    color: #55F991;
+    background: #273549;
+    border: none;
+    
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        margin: 10%;
+    }
+    
+    .container h1 {
+        font-size: 36px;
+    }
+    
+    button {
+        margin-top: 30px;
+    }
+    
+    .input-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    input[type="text"] {
+        width: 80%;
+    }
+}
+
+
