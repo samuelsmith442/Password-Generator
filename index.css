@@ -8,9 +8,11 @@ body {
 }
 
 .container {
-    margin: 12%;
-    width: 90%;
-    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 500px;
 }
 
 
@@ -31,27 +33,26 @@ body {
 }
 
 button {
-margin-top: 50px;     
-padding: 9px 17px 9px 15px;
-justify-content: center;
-align-items: center;
-color: #fff;
-border-radius: 6px;
-background: #10B981;
-border: none;
-cursor: pointer;
+    
+    margin-top: 50px;     
+    padding: 9px 17px 9px 15px;
+    color: #fff;
+    border-radius: 6px;
+    background: #10B981;
+    border: none;
+    cursor: pointer;
 
 }
 
 hr {
    
   margin-top: 50px;
-    border: none; /* Remove the default border */
-    height: 1px; /* Set the height to create a horizontal line */
+    border: none; 
+    height: 1px; 
     background: #2F3E53;
-    width: 100%; /* Adjust the width to your preference */
-    margin-left: auto; /* Center the HR on the larger screens */
-    margin-right: auto; /* Center the HR on the larger screens */  
+    width: 100%; 
+    margin-left: auto; 
+    margin-right: auto;  
 
 
 }
@@ -64,9 +65,8 @@ hr {
 
 input[type="text"] {
     margin-top:  35px;
-    width: 40%; /* Adjust the width as needed */
+    width: 40%; 
     padding: 10px;
-    border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
     text-align: center;
@@ -91,13 +91,13 @@ input[type="text"] {
     }
     
     .input-container {
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        
     }
     
     input[type="text"] {
         width: 80%;
     }
 }
-
 
