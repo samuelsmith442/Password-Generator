@@ -14,15 +14,15 @@
     <title>Password Generator</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container" role="main">
       <h1>Generate a <span>random password</span></h1>
       <p>Never use an insecure password again.</p>
-      <button id="generateButton">Generate Passwords</button>
+      <button id="generateButton" aria-label="Generate Passwords">Generate Passwords</button>
       <hr />
 
       <div class="input-container">
-        <input type="text" id="passwordDisplay1" readonly />
-        <input type="text" id="passwordDisplay2" readonly />
+        <input type="text" id="passwordDisplay1" aria-label="Generated Password 1" readonly />
+        <input type="text" id="passwordDisplay2" aria-label="Generated Password 2" readonly />
       </div>
     </div>
 

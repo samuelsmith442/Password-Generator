@@ -13,8 +13,8 @@ body {
     align-items: flex-start;
     margin: 0 auto;
     max-width: 500px;
+    padding: 20px;
 }
-
 
 .container h1 {
     font-weight: 800;
@@ -29,43 +29,39 @@ body {
 .container p {
     font-size: 21px;
     margin-top: 10px;
-    
 }
 
 button {
-    
-    margin-top: 50px;     
+    margin-top: 50px;
     padding: 9px 17px 9px 15px;
     color: #fff;
     border-radius: 6px;
     background: #10B981;
     border: none;
     cursor: pointer;
-
+    width: 100%;
+    box-sizing: border-box;
 }
 
 hr {
-   
-  margin-top: 50px;
-    border: none; 
-    height: 1px; 
+    margin-top: 50px;
+    border: none;
+    height: 1px;
     background: #2F3E53;
-    width: 100%; 
-    margin-left: auto; 
-    margin-right: auto;  
-
-
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .input-container {
     display: flex;
     justify-content: space-between;
-    
+    flex-direction: column;
 }
 
 input[type="text"] {
-    margin-top:  35px;
-    width: 40%; 
+    margin-top: 35px;
+    width: 100%;
     padding: 10px;
     border-radius: 5px;
     font-size: 16px;
@@ -73,31 +69,52 @@ input[type="text"] {
     color: #55F991;
     background: #273549;
     border: none;
-    
+    margin-bottom: 10px;
 }
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
     .container {
         margin: 10%;
+        padding: 10px;
     }
-    
+
     .container h1 {
         font-size: 36px;
     }
-    
+
     button {
         margin-top: 30px;
     }
-    
+
     .input-container {
-        display: flex;
         flex-direction: column;
-        
     }
-    
+
     input[type="text"] {
-        width: 80%;
+        width: 100%;
     }
 }
 
+@media (max-width: 480px) {
+    .container {
+        padding: 5px;
+    }
+
+    .container h1 {
+        font-size: 30px;
+    }
+
+    .container p {
+        font-size: 18px;
+    }
+
+    button {
+        padding: 7px 15px;
+        font-size: 14px;
+    }
+
+    input[type="text"] {
+        font-size: 14px;
+    }
+}
